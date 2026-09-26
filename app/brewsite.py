@@ -12,22 +12,22 @@ data = json.loads(response.content)
 
 @app.route("/home")
 def home():
-    return rt("home.html", user = "Jinx")
+    return rt("home.html", user = "S. Shawn Holladay")
 
 
 @app.route("/breweries")
 def breweries():
-    return rt("breweries.html", content = data)
+    return rt("breweries.html", user = "S.Shawn Holladay", content = data)
 
 
 @app.route("/beer_types")
 def beer_types():
-    return rt("beer_types.html", user = "Jinx")
+    return rt("beer_types.html", user = "S.Shawn Holladay")
 
 
 @app.route("/about")
 def about():
-    return rt("about.html", user = "Jinx")
+    return rt("about.html", user = "S.Shawn Holladay")
 
 
 if __name__ == "__main__":
